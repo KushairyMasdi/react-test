@@ -1,0 +1,55 @@
+#box {
+  margin: 25px;
+  padding: 15px;
+  background-color: #b3d0da;
+  height: 250px;
+  max-width: 800px;
+  border-width: 1px;
+  border-color: #dbd0da;
+  border-style: solid;  
+}
+
+/* div for video display */
+#vidDis {
+  max-width: 500px;
+  height: 250px; 
+}
+
+/* div for thumbs, text field, and button */
+#others {
+  width: 100px;
+  height: 100px;  
+}
+
+/* thumbs down */
+#thumbsdown {
+    transform: rotate(180deg);
+}
+
+/* thumbs up animation */
+.floating-up {  
+    animation-name: floating-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating-up {
+      0% {opacity:1;}
+    100% {opacity:0;}
+    from { transform: translate(0, 0px); }
+    to   { transform: translate(0, -50px); }    
+}
+
+/* thumbs down animation */
+.floating-down {  
+    animation-name: floating-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating-down {
+      0% { opacity:1; }
+    100% { opacity:0; }
+    from { transform: translate(0, 0px) rotate(180deg); }
+    to   { transform: translate(0, -50px) rotate(180deg); }    
+}
